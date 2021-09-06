@@ -7,9 +7,10 @@
                 {{ publicacion.fecha_publicacion }}
             </div>
             <h2><a href="{% url 'publicacion_detalle' pk=publicacion.pk %}">{{ publicacion.titulo }}</a></h2>
-            <div class = "content">
+            <div class = "class="textarea" placeholder="e.g. Hello world"">
                 {{ publicacion.texto|linebreaksbr }}
             </div>
         </div>
     {% endfor %}
 {% endblock %}
+
