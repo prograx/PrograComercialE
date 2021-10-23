@@ -27,4 +27,4 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        run: python manage.py test blog.tests.test_models.PublicacionModelTest
+        python manage.py test blog.tests.test_models.PublicacionModelTest
