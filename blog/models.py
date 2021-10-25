@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class Publicacion(models.Model):
     autor = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    titulo = models.CharField(max_length=100,help_text='Ingrese el Título')
+    titulo = models.CharField(max_length=50,help_text='Ingrese el Título')
     texto = models.TextField()
     fecha_creacion = models.DateTimeField('Creado',
             default=timezone.now)
